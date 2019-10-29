@@ -2,6 +2,10 @@
 
 Some dev tools.
 
+## Github Actions test
+
+![](https://github.com/jetmartin/dev_tools/workflows/Continuous%20Integration/badge.svg)
+
 ## Bash
 
 Some usefull bash scripts.
