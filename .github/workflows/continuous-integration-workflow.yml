@@ -9,11 +9,11 @@ jobs:
     # runs-on: ubuntu-latest
     steps:
       - markdownlint:
-        stage: linting
+        # stage: linting
         uses: pipelinecomponents/markdownlint:latest
         # image: pipelinecomponents/markdownlint:latest
-        script:
-          - mdl --style all --warnings .
+        # script:
+        #   - mdl --style all --warnings .
 
 # every step must define a uses or run key
 
