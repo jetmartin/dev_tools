@@ -14,8 +14,9 @@ jobs:
         uses: docker://pipelinecomponents/markdownlint:latest
         # env: 
         #   MY_VAR: mdl --style all --warnings .
-        entrypoint: /app/bin/mdl
-        args: --style all --warnings .
+        with:
+          entrypoint: /app/bin/mdl
+          args: --style all --warnings .
       # - run: mdl --style all --warnings .
         # image: pipelinecomponents/markdownlint:latest
         # script:
