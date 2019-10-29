@@ -9,15 +9,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: markdownlint
+        id: markdownlint
         # stage: linting
         uses: docker://pipelinecomponents/markdownlint:latest
-        run: mdl --style all --warnings .
+        # env: 
+        #   MY_VAR: mdl --style all --warnings .
+        entrypoint: /app/bin/mdl
+        args: --style all --warnings .
+      # - run: mdl --style all --warnings .
         # image: pipelinecomponents/markdownlint:latest
         # script:
         #   - mdl --style all --warnings .
 
 # every step must define a uses or run key
 
+# name: "Test typescript-action"
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - master
+#       - 'releases/*'
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v1
+
+#     - run: npm ci
+#     - run: npm run build
+#     - run: npm test
+#     - uses: ./
+#       with: 
+#         milliseconds: 1000
 
 # jobs:
 #   my_first_job:
