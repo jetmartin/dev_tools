@@ -11,6 +11,7 @@ jobs:
       - name: markdownlint
         # stage: linting
         uses: docker://pipelinecomponents/markdownlint:latest
+        run: mdl --style all --warnings .
         # image: pipelinecomponents/markdownlint:latest
         # script:
         #   - mdl --style all --warnings .
