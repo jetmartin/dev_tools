@@ -6,10 +6,19 @@ jobs:
     # Job name is Integration
     name: Integration
     # This job runs on Linux
-    # runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - markdownlint:
         stage: linting
         image: pipelinecomponents/markdownlint:latest
         script:
           - mdl --style all --warnings .
+
+
+# jobs:
+#   my_first_job:
+#     name: My Job Name
+#       steps:
+#         - uses: actions/setup-node@v1
+#           with:
+#             node-version: 10.x
