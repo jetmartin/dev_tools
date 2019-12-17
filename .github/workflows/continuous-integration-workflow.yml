@@ -20,8 +20,8 @@ jobs:
           # entrypoint: /bin/sh
           # args: pwd
           entrypoint: ls
-          args: -la
-          volumes: /github/workspace:/code
+          args: -la /github/workspace
+          # volumes: /github/workspace:/code
           # volumes:
           #   - /github/workspace:/code
 
