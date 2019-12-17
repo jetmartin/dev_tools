@@ -8,6 +8,8 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout current repo
+        uses: actions/checkout@v2
       - name: markdownlint
         id: markdownlint
         # stage: linting
