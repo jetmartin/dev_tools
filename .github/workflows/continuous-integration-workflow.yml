@@ -21,6 +21,9 @@ jobs:
           # args: pwd
           entrypoint: ls
           args: -la
+          volumes: /github/workspace:/code
+          # volumes:
+          #   - /github/workspace:/code
 
 
       # This step prints an output (time) from the previous step's action.
