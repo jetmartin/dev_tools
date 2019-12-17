@@ -16,7 +16,8 @@ jobs:
         #   MY_VAR: mdl --style all --warnings .
         with:
           entrypoint: /app/bin/mdl
-          args: --style all --warnings .
+          args: --version
+          # args: --style all --warnings .
           # entrypoint: /bin/sh
           # args: pwd
 
