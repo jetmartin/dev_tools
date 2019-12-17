@@ -15,11 +15,12 @@ jobs:
         # env: 
         #   MY_VAR: mdl --style all --warnings .
         with:
-          entrypoint: /app/bin/mdl
-          args: --version
+          # entrypoint: /app/bin/mdl
           # args: --style all --warnings .
           # entrypoint: /bin/sh
           # args: pwd
+          entrypoint: ls
+          args: -la
 
 
       # This step prints an output (time) from the previous step's action.
