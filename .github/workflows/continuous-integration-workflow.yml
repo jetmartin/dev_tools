@@ -17,12 +17,12 @@ jobs:
         # env: 
         #   MY_VAR: mdl --style all --warnings .
         with:
-          # entrypoint: /app/bin/mdl
-          # args: --style all --warnings .
+          entrypoint: /app/bin/mdl
+          args: --style all --warnings /github/workspace
           # entrypoint: /bin/sh
           # args: pwd
-          entrypoint: ls
-          args: -la /github/workspace
+          # entrypoint: ls
+          # args: -la /github/workspace
           # volumes: /github/workspace:/code
           # volumes:
           #   - /github/workspace:/code
