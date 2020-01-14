@@ -1,0 +1,62 @@
+# Git essentials
+
+You will find bellow all the common usecases and exemples of Git usages.
+If you do not need advanced skills to read this lesson.
+You can skip advanced concepts or used it as a reminder for advances tasks you'r not running on a daliy basis.
+
+For additional informations, **read first the [Git](https://git-scm.com/doc) documentation**.
+In case you'r lost in the documentation, the [Atalssian](https://www.atlassian.com/git/tutorials) Git documentation is more user friendly for new users.
+
+## Summary
+
+- [Understanding the basics](./understanding-the-basics.md)
+- [Create a new project](./create-a-new-project.md)
+  - [Create from scratch](./create-a-new-project.md#Create-from-scratch)
+  - [Create from existing remote repository](./create-a-new-project.md#Create-from-existing-remote-repository)
+  - [Git template](./create-a-new-project.md#Git-template)
+- [Config](./config.md)
+  - [Local conf](./config.md#Local-conf)
+  - [Config files](./config.md#Config-files)
+    - [Add a conf at the right place](./config.md#Add-a-conf-at-the-right-place)
+    - [Config files Syntax](./config.md#Config-files-Syntax)
+  - [Share git config](./config.md#Share-git-config)
+  - [Git attributes](./config.md#Git-attributes)
+- [Remote repository](./remote-repository.md)
+- [Use your history](./use-your-history.md)
+- [Reset clean & stash](./reset-clean-stash.md)
+  - [Reset](./reset-clean-stash.md#Reset)
+  - [Clean](./reset-clean-stash.md#Clean)
+  - [To completely clean a workspace](./reset-clean-stash.md#To-completely-clean-a-workspace)
+  - [Stash](./reset-clean-stash.md#Stash)
+- [Rebase](./rebase.md)
+- [Diff & patch](./diff-patch.md)
+- [Gitignore](./gitignore.md)
+- [Sub-modules and sub-tree](./sub-modules-and-sub-tree.md)
+  - [Submodules](./sub-modules-and-sub-tree.md#Submodules)
+  - [Subtrees](./sub-modules-and-sub-tree.md#Subtrees)
+- [Fetch](./fetch.md)
+- [Tags](./tags.md)
+- [Git branches](./git-branches.md)
+  - [Display branches informations](./git-branches.md#Display-branches-informations)
+  - [Main Branches interractions](./git-branches.md#Main-Branches-interractions)
+  - [Merges](./git-branches.md#Merges)
+  - [Branches and local dev branches](./git-branches.md#Branches-and-local-dev-branches)
+- [Status](./status.md)
+- [Checkout](./heckout.md)
+- [Commit, add, move & remove](./commit-add-move-remove.md)
+  - [Add](./commit-add-move-remove.md#Add)
+  - [Commit](./commit-add-move-remove.md#Commit)
+    - [Smart commits](./commit-add-move-remove.md#Smart-commits)
+    - [Empty folders commit](./commit-add-move-remove.md#Empty-folders-commit)
+  - [Squash](./commit-add-move-remove.md#Squash)
+- [Using git aliases](./using-git-aliases.md)
+- [Cherry-picking](./Cherry-picking.md)
+- [Git hooks](./Git-hooks.md)
+- [Clean Git history](./clean-Git-history.md)
+- [Detached head](./detached-head.md)
+- [How to get one commit/tag without history](./how-to-get-one-commit-tag-without-history.md)
+- [Git hover a proxy](./git-hover-a-proxy.md)
+- [Credential](./credential.md)
+- [HTTP \| HTTPS \| SSH](./http-https-ssh.md)
+  - [SSL issue](./http-https-ssh.md#SSL-issue)
+- [Quizz](./quizz.md)
