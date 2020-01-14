@@ -20,3 +20,17 @@ jobs:
         with:
           entrypoint: /app/bin/mdl
           args: --style all --warnings /github/workspace
+      # Run ShellCheck
+      # - name: shellcheck
+      #   id: shellcheck
+      #   uses: docker://pipelinecomponents/shellcheck:latest
+      #   with:
+          # entrypoint: /app/bin/mdl
+      #     args: /github/workspace
+      # # Run Bats
+      # - name: bats
+      #   id: bats
+      #   uses: docker://bats/bats:latest
+      #   with:
+      #     entrypoint: /app/bin/mdl
+      #     args: -v "$(pwd)/bash/goto:/code" /github/workspace/bats:latest /code/test

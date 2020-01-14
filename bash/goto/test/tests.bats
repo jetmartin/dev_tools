@@ -2,6 +2,9 @@
 
 function setup() {
     bash
+    cp /code/goto/goto.sh /usr/local/lib/goto/goto.sh
+    cp /code/goto/path_aliases.sh /usr/local/lib/goto/path_aliases.sh
+    chmod +x /usr/local/lib/goto/goto.sh
 }
 
 @test "Goto static folder name" {
