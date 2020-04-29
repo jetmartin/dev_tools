@@ -8,11 +8,15 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      #
       # Checkout current branch
+      #
       - name: Checkout current repo
         id: Checkout
         uses: actions/checkout@v2
+      #
       # Run Markdownlint
+      #
       - name: markdownlint
         id: markdownlint
         # stage: linting
@@ -20,14 +24,20 @@ jobs:
         with:
           entrypoint: /app/bin/mdl
           args: --style all --warnings /github/workspace
+      #
       # Run ShellCheck
-      # - name: shellcheck
-      #   id: shellcheck
-      #   uses: docker://pipelinecomponents/shellcheck:latest
-      #   with:
+      #
+      - name: shellcheck
+        id: shellcheck
+        uses: docker://pipelinecomponents/shellcheck:latest
+        with:
           # entrypoint: /app/bin/mdl
-      #     args: /github/workspace
-      # # Run Bats
+          # args: sh -c "find /github/workspace/ -name .git -type d -prune -o -type f -name \*.sh -print | xargs shellcheck --shell=bash --format=checkstyle"
+          # --severity=SEVERITY      Minimum severity of errors to consider (error, warning, info, style)
+          args: sh -c "find /github/workspace/ -name .git -type d -prune -o -type f -name \*.sh -print | xargs shellcheck --shell=bash --severity=warning"
+      #
+      # Run Bats
+      #
       # - name: bats
       #   id: bats
       #   uses: docker://bats/bats:latest
