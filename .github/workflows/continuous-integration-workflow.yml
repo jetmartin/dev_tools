@@ -17,13 +17,13 @@ jobs:
       #
       # Run Markdownlint
       #
-      - name: markdownlint
-        id: markdownlint
-        # stage: linting
-        uses: docker://pipelinecomponents/markdownlint:latest
-        with:
-          entrypoint: /app/bin/mdl
-          args: --style all --warnings /github/workspace
+      # - name: markdownlint
+      #   id: markdownlint
+      #   # stage: linting
+      #   uses: docker://pipelinecomponents/markdownlint:latest
+      #   with:
+      #     entrypoint: /app/bin/mdl
+      #     args: --style all --warnings /github/workspace
       #
       # Run ShellCheck
       #
