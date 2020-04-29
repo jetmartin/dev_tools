@@ -34,7 +34,7 @@ jobs:
           # entrypoint: /app/bin/mdl
           # args: sh -c "find /github/workspace/ -name .git -type d -prune -o -type f -name \*.sh -print | xargs shellcheck --shell=bash --format=checkstyle"
           # --severity=SEVERITY      Minimum severity of errors to consider (error, warning, info, style)
-          args: sh -c "find /github/workspace/ -type f -name \*.sh -print | xargs shellcheck"
+          args: sh -c "find /github/workspace/ -type f -name \*.sh -print | xargs -t shellcheck"
       #
       # Run Bats
       #
