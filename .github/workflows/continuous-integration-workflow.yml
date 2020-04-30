@@ -37,7 +37,7 @@ jobs:
           # args: sh -c "find ${GITHUB_WORKSPACE} -type f -name \*.sh -print | xargs -t shellcheck"
           # args: sh -c "find \${GITHUB_WORKSPACE} -type f -name \"*.sh\" -print"
           # args: sh -c "echo \"test \${GITHUB_WORKSPACE} - end test\""
-          args: sh -c "shellcheck \${GITHUB_WORKSPACE}/goto/goto.sh"
+          args: ${GITHUB_WORKSPACE}/goto/goto.sh
       #
       # Run Bats
       #
