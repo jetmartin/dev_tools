@@ -53,7 +53,7 @@ In case you'r lost in the documentation, the [Atalssian](https://www.atlassian.c
 - [Using git aliases](./using-git-aliases.md)
 - [Cherry-picking](./Cherry-picking.md)
 - [Git hooks](./Git-hooks.md)
-- [Clean Git history](./clean-Git-history.md)
+- [Clean Git history](./clean-git-history.md)
 - [Detached head](./detached-head.md)
 - [How to get one commit/tag without history](./how-to-get-one-commit-tag-without-history.md)
 - [Git hover a proxy](./git-hover-a-proxy.md)
