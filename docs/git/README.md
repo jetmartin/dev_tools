@@ -14,6 +14,7 @@ In case you'r lost in the documentation, the [Atalssian](https://www.atlassian.c
   - [Create from scratch](./create-a-new-project.md#Create-from-scratch)
   - [Create from existing remote repository](./create-a-new-project.md#Create-from-existing-remote-repository)
   - [Git template](./create-a-new-project.md#Git-template)
+- [git attributes](./gitattributes.md)
 - [Config](./config.md)
   - [Local conf](./config.md#Local-conf)
   - [Config files](./config.md#Config-files)

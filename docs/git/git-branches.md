@@ -185,6 +185,49 @@ git merge -s ours my-feature-branch
 
 > Alway prefer the recussive merge strategy (with options) otherwise you'r managing advance stuff...
 
+### Manage conflicts in a nutshell
+
+Identify the files who have a merge issue
+
+```sh
+git status
+```
+
+Search for `Unmerged paths` where are your conflicts
+
+```sh
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+```
+
+In this case the `README.md` file.
+
+Within the file you will identify conflicts as on bellow example
+
+```sh
+\<\<\<\<\<\<\< HEAD
+Some text
+\=\=\=\=\=\=\=
+Some other text
+\>\>\>\>\>\>\> branch-a
+```
+
+To fix them more easily run bellow comand to see a diff or word diff.
+
+```sh
+git diff HEAD MERGE_HEAD README.md
+# or
+git diff --word-diff HEAD MERGE_HEAD README.md
+```
+
+Manage the merge byr editing the file to remove the conflict syntax from the file and keep expected text.
+Commit the updated file to resolve the conflict.
+
+```sh
+git commit -m "Resolved merge conflict by ..." # describe your action here
+```
+
 ## Branches and local dev branches
 
 When you work in a team, you can be several developpers working at the same time on the same branch.

@@ -1,0 +1,80 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=lf
+
+# Explicitly declare text files you want to always be normalized and converted
+# to same line endings on checkout.
+*.c text
+*.h text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Declare files that will always have LF line endings on checkout.
+*.bowerrc      text eol=lf
+*.css          text eol=lf
+*.conf         text eol=lf
+*.dist         text eol=lf
+*.engine       text eol=lf
+*.html         text eol=lf
+*.inc          text eol=lf
+*.info         text eol=lf
+*.install      text eol=lf
+*.js           text eol=lf
+*.jsbeautifyrc text eol=lf
+*.jshintrc     text eol=lf
+*.json         text eol=lf
+*.lock         text eol=lf
+*.map          text eol=lf
+*.md           text eol=lf
+*.module       text eol=lf
+*.php          text eol=lf
+*.patch        text eol=lf
+*.po           text eol=lf
+*.less         text eol=lf
+*.sass         text eol=lf
+*.scss         text eol=lf
+*.source       text eol=lf
+*.script       text eol=lf
+*.sh           text eol=lf
+*.sql          text eol=lf
+*.test         text eol=lf
+*.theme        text eol=lf
+*.txt          text eol=lf
+*.twig         text eol=lf
+*.xml          text eol=lf
+*.yml          text eol=lf
+*.yaml         text eol=lf
+Product-GetDWRecommendations text eol=lf
+*.rst text eol=lf
+
+# Define binary file attributes.
+# - Do not treat them as text.
+# - Include binary diff in patches instead of "binary files differ."
+*.gif     -text diff
+*.gz      -text diff
+*.ico     -text diff
+*.jpg     -text diff
+*.png     -text diff
+*.phar    -text diff
+*.exe     -text diff
+*.jar     -text diff
+*.ttf     -text diff
+*.pdf     -text diff
+*.doc     -text diff
+*.docx     -text diff
+*.tar     -text diff
+*.tgz -text diff
+*.gz -text diff
+*.war      -text diff
+*.zip -text diff
+*.téléchargement -text diff
+.* -text diff
+Vagrantfile -text diff
+
+# absolute paths are ok, as are globs
+#/**/postinst* text eol=lf
+
+# paths that don't start with / are treated relative to the .gitattributes folder
+#relative/path/*.txt text eol=lf
