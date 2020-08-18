@@ -31,13 +31,13 @@ git config --global credential.helper cache
 - It's supported by most of Git platforms (github, gitlab, ...)
 - You can add a pathphrase to your key
 
-Refer to the nice [GitHub documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+Refer to the Gitlab, Bitbucket or [GitHub documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 ## acces token
 
 Some platforms such as GitLab allow to use personal acces token.
 If you can prefer the SSH key aythentification. This method can be usefull for process automation with limited permissions on each tokens.
 
-as an exemple refer to the [GitLab documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+as an exemple refer to the Gitlab or [GitHub documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 You can concatenate the token in the url for some automation use-cases ex : `git clone https://username:token@domain.tld/repo.git`
