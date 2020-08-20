@@ -60,7 +60,7 @@ git add .
 git commit -m "A simple commit"
 ```
 
-You can add and commit on line using the *-a* option.
+The *all* (*-a*) option can solve most commit issues. Beware, it is not ans *add* option.
 
 ```sh
 git commit -a -m "Another simple commit"
@@ -70,6 +70,14 @@ If you want to commit just some of the file you are working one, you has to spec
 
 ```sh
 git commit myfile.ext folder/myotherfile.ext -m "Specific files commit."
+```
+
+You can use expressions (as welle as for the `add` comand) to manages the files to commit such as ".", "folfer/", "*.ext", etc
+
+```sh
+git commit *.ext -m "Specific files extention commit."
+git commit folder/ -m "Specific folder updates to commit"
+git commit folder_a/ folder_b/  -m "Specific folders modifications to commmit"
 ```
 
 As we've said, your commit history is a real tool. So you have to do your best to keep it clear and clean.
