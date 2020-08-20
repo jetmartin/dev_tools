@@ -148,7 +148,7 @@ As looking hover the whole project files would be a nightmare, some commands, us
 * Look at the diffs from each branch. `git log --merge -p <path>` will show diffs first for the `HEAD` version and then the `MERGE_HEAD` version.
 * Look at the originals. `git show :1:filename` shows the common ancestor, `git show :2:filename` shows the `HEAD` version, and `git show :3:filename` shows the `MERGE_HEAD` version.
 
-Bellow some commands and tips.
+### Merge two branches on your local environement
 
 ```sh
 # Checkout the branch where you want to incorporate the modifications.
@@ -159,9 +159,19 @@ git merge my-feature-branch
 git merge --no-commit my-feature-branch
 ```
 
-Another commmand con generate a merge, the `pull` command.
+## Merge local branch with a remote brnach
+
+Another commmand con generate a merge, the `pull` command. (See pull/push documentation for more details).
 Effectively, if anoter person has pushed code to the origin, when you will pull the branch, a merge will be managed by GIT.
 Thats why before any `push`, prefer to alwais make a `pull` to manage the merge if needed (otherwise, git will ask you to do so)
+
+```sh
+# Manage a simple pull of a remote tracking branch as usual.
+git pull origin master
+```
+
+All the main `merge` commands are available for the `pull` command such as `--no-commit`, `--squash`, `--strategy`, ...
+See the [doc](https://git-scm.com/docs/git-pull).
 
 ### advance merge strategy/options
 
