@@ -72,6 +72,22 @@ If you want to commit just some of the file you are working one, you has to spec
 git commit myfile.ext folder/myotherfile.ext -m "Specific files commit."
 ```
 
+The fist line of your commit message is frequently name as the "commit title".
+But a commit message can be much longer. especialy if you squash your commits on merge.
+Tj "commit tile is what would be displayed by the `log` and most command showing the history by default.
+
+> Your commit title has to make sens and be usefull for you and others developpers.
+
+To commit longer messages use the `-e` option.
+In recent Git CLI, if there is no message option, instead of an error, il will display the text editoe (showing the repo commit template)
+
+The -e option as any other Git commands will use the default text editor used by your CLI.
+It's frequently a vi or vim regarding to your OS and specific configuration (you can manage that on your git config).
+
+```sh
+git commit . -e
+```
+
 You can use expressions (as welle as for the `add` comand) to manages the files to commit such as ".", "folfer/", "*.ext", etc
 
 ```sh
@@ -82,6 +98,7 @@ git commit folder_a/ folder_b/  -m "Specific folders modifications to commmit"
 
 As we've said, your commit history is a real tool. So you have to do your best to keep it clear and clean.
 So if you've mad a bad commit, you do not need to ad another commit, you can *amend* it.
+
 > Do not amend public commits. In other words, if you've pushed your modifications, it's to late.
 
 ```sh
