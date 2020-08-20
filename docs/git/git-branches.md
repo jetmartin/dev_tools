@@ -159,6 +159,12 @@ git merge my-feature-branch
 git merge --no-commit my-feature-branch
 ```
 
+Another commmand con generate a merge, the `pull` command.
+Effectively, if anoter person has pushed code to the origin, when you will pull the branch, a merge will be managed by GIT.
+Thats why before any `push`, prefer to alwais make a `pull` to manage the merge if needed (otherwise, git will ask you to do so)
+
+### advance merge strategy/options
+
 > In case you'r having lots of conflicts and you'r sure how to manage them you can use advance merge strategy/options.
 
 Advance merge to avoid conflicts if you want to force your mofificaton to apply in case of conflict.
@@ -225,8 +231,17 @@ Manage the merge byr editing the file to remove the conflict syntax from the fil
 Commit the updated file to resolve the conflict.
 
 ```sh
-git commit -m "Resolved merge conflict by ..." # describe your action here
+git commit . -m "Resolved merge conflict by ..." # describe your action here
+# If you have no specific information to share about conflict resolution
+# you clould not provide the message, recent Git release will populate the merge message itself.
+git commit .
 ```
+
+If you are facing issues to make your merge commit try bellow commands regarding to your context.
+In most cases, the first one is what your are expecting to do.
+
+* Commit [all}](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--a) `git commit -a`
+* Commit [include](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--i) `git commit -i`
 
 ## Branches and local dev branches
 
