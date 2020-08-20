@@ -159,7 +159,7 @@ git merge my-feature-branch
 git merge --no-commit my-feature-branch
 ```
 
-## Merge local branch with a remote brnach
+### Merge local branch with a remote brnach
 
 Another commmand con generate a merge, the `pull` command. (See pull/push documentation for more details).
 Effectively, if anoter person has pushed code to the origin, when you will pull the branch, a merge will be managed by GIT.
